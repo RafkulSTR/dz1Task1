@@ -5,7 +5,8 @@
         static void Main(string[] args)
         {
             //task2();
-            task4();
+            //task4();
+            task6();
         }
 
         //
@@ -49,6 +50,23 @@
                 max = NumberThird;
             }
             Console.WriteLine(max);
+        }
+
+        //
+        //на вход принимает число и выдаёт, является ли число чётным
+        //
+        static private void task6()
+        {
+            Console.Write("Введите  число: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            if ((number % 2) == 0)
+            {
+                Console.WriteLine("Число является четным");
+            }
+            else 
+            {
+                Console.WriteLine("Число является нечетным");
+            }
         }
     }
 }
