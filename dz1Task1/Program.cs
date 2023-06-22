@@ -4,9 +4,10 @@
     {
         static void Main(string[] args)
         {
-            //task2();
-            //task4();
+            task2();
+            task4();
             task6();
+            task8();
         }
 
         //
@@ -67,6 +68,26 @@
             {
                 Console.WriteLine("Число является нечетным");
             }
+        }
+
+        static private void task8()
+        {
+            Console.Write("Введите  число: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            if (number > 0) 
+            {
+                int count = 0;
+                while (count < number) 
+                { 
+                    count++;
+                    if ((count % 2) == 0) 
+                    {
+                        Console.WriteLine(count);
+                    }
+
+                }
+            }
+
         }
     }
 }
